@@ -1,0 +1,36 @@
+{
+    "name": "axguowen/think-smsclient",
+    "description": "Simple SMS Client For ThinkPHP",
+    "keywords": [
+        "thinkphp",
+        "sms",
+        "client"
+    ],      
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "axguowen",
+            "email": "axguowen@qq.com"
+        }
+    ],
+    "require": {
+    	"php": ">=7.2.5",
+        "topthink/framework": "^6.1",
+        "qiniu/php-sdk": "^7.0",
+        "tencentcloud/sms": "^3.0",
+        "alibabacloud/dysmsapi-20170525": "^2.0",
+        "axguowen/baidubce-sms": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "config": {
+                "smsclient": "src/config.php"
+            }
+        }
+    }
+}
