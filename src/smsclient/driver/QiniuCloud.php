@@ -83,8 +83,8 @@ class QiniuCloud extends Platform
         // 遍历
         foreach($mobiles as $item){
             $resultData[] = [
-                // 接口类型
-                'type' => 'qiniu',
+                // 驱动类型
+                'type' => static::class,
                 // 手机号
                 'tel' => $item,
                 // 流水号
