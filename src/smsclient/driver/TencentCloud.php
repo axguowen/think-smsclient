@@ -119,7 +119,7 @@ class TencentCloud extends Platform
         foreach($sendStatusSet as $item){
             $resultData[] = [
                 // 驱动类型
-                'type' => static::class,
+                'driver' => static::class,
                 // 手机号
                 'tel' => $item->PhoneNumber,
                 // 流水号

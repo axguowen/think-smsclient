@@ -96,7 +96,7 @@ class Aliyun extends Platform
         foreach($mobiles as $item){
             $resultData[] = [
                 // 驱动类型
-                'type' => static::class,
+                'driver' => static::class,
                 // 手机号
                 'tel' => $item,
                 // 流水号

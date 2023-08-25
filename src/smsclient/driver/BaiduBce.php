@@ -97,7 +97,7 @@ class BaiduBce extends Platform
         foreach($sendStatusSet as $item){
             $resultData[] = [
                 // 驱动类型
-                'type' => static::class,
+                'driver' => static::class,
                 // 手机号
                 'tel' => $item->mobile,
                 // 流水号
