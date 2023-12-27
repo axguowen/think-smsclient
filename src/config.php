@@ -71,6 +71,17 @@ return [
             'signature_id' => '',
             // 服务接入点, 默认smsv3.bj.baidubce.com
             'endpoint' => '',
-        ]
+        ],
+        // Vaptcha
+        'vaptcha' => [
+            // 驱动类型
+            'type' => 'Vaptcha',
+            // 短信账户id
+            'smsid' => '',
+            // 短信账户key
+            'smskey' => '',
+            // 模板ID
+            'templateid' => '',
+        ],
     ],
 ];
