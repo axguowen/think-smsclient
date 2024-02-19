@@ -72,6 +72,19 @@ return [
             // 服务接入点, 默认smsv3.bj.baidubce.com
             'endpoint' => '',
         ],
+        // 天翼云
+        'ctyun' => [
+            // 驱动类型
+            'type' => 'Ctyun',
+            // 公钥
+            'access_key' => '',
+            // 私钥
+            'security_key' => '',
+            // 模板ID
+            'template_code' => '',
+            // 签名
+            'sign_name' => '',
+        ],
         // Vaptcha
         'vaptcha' => [
             // 驱动类型

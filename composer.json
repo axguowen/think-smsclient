@@ -20,6 +20,7 @@
         "tencentcloud/sms": "^3.0",
         "alibabacloud/dysmsapi-20170525": "^2.0",
         "axguowen/baidubce-sms": "^2.0",
+        "axguowen/ctyun-sms": "^1.0",
         "axguowen/http-client": "^1.0"
     },
     "autoload": {
