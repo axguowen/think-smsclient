@@ -15,7 +15,7 @@
     ],
     "require": {
     	"php": ">=7.2.5",
-        "topthink/framework": "^6.1",
+        "topthink/framework": "^6.1|^8.0",
         "qiniu/php-sdk": "^7.0",
         "tencentcloud/sms": "^3.0",
         "alibabacloud/dysmsapi-20170525": "^2.0",
