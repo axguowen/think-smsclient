@@ -75,7 +75,7 @@ class QiniuCloud extends Platform
 
         // 如果发送失败
         if(is_null($response[0])){
-            // 返回错误
+            // 返回
             return $response;
         }
         // 要返回的数据
