@@ -88,7 +88,7 @@ class QiniuCloud extends Platform
                 // 手机号
                 'tel' => $item,
                 // 流水号
-                'serial_id' => $sendMessage[0]['job_id'],
+                'serial_id' => $response[0]['job_id'],
                 // 发送状态
                 'send_status' => 1,
             ];
