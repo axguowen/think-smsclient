@@ -39,6 +39,8 @@ class TencentCloud extends Platform
         'template_id' => '',
 		// 已审核的签名
 		'sign_name' => '',
+        // 服务接入点, 支持的地域列表参考 https://cloud.tencent.com/document/api/382/52071#.E5.9C.B0.E5.9F.9F.E5.88.97.E8.A1.A8
+        'endpoint' => '',
     ];
 
     /**
@@ -50,8 +52,15 @@ class TencentCloud extends Platform
     {
         // 实例化授权对象
         $credential = new Credential($this->options['secret_id'], $this->options['secret_key']);
+        // 服务接入点
+        $endpoint = $this->options['endpoint'];
+        // 如果为空
+        if(empty($endpoint)){
+            // 默认使用广州
+            $endpoint = 'ap-guangzhou';
+        }
         // 实例化要请求产品的 client 对象
-        $this->handler = new SmsClient($credential, $this->options['endpoint']);
+        $this->handler = new SmsClient($credential, $endpoint);
         // 返回
         return $this;
     }
