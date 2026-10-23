@@ -64,9 +64,10 @@ class Aliyun extends Platform
      * @access public
      * @param string|array $mobiles
      * @param array $data
+     * @param array $options
      * @return array
      */
-    public function send($mobiles, array $data = [])
+    public function send($mobiles, array $data = [], array $options = [])
 	{
         // 实例化请求类
         $request = new SendSmsRequest([

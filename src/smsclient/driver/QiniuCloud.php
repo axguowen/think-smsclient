@@ -56,9 +56,10 @@ class QiniuCloud extends Platform
      * @access public
      * @param string|array $mobiles
      * @param array $data
+     * @param array $options
      * @return array
      */
-    public function send($mobiles, array $data = [])
+    public function send($mobiles, array $data = [], array $options = [])
 	{
         // 如果指定的手机号不是数组
         if(!is_array($mobiles)){

@@ -66,16 +66,16 @@ class Vaptcha extends Platform
      * @access public
      * @param string|array $mobiles
      * @param array $data
-     * @param string $token
+     * @param array $options
      * @return array
      */
-    public function send($mobiles, array $data = [], string $token = '')
+    public function send($mobiles, array $data = [], array $options = [])
 	{
         // 要发送的数据
         $requestBody = $this->options;
         // 如果指定了token
-        if(!empty($token)){
-            $requestBody['token'] = $token;
+        if(isset($options['token'])){
+            $requestBody['token'] = $options['token'];
         }
         // 处理参数
         $params = [];

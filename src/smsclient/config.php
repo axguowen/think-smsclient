@@ -96,5 +96,18 @@ return [
             // 模板ID
             'templateid' => '',
         ],
+        // 创蓝云智
+        'chuanglan' => [
+            // 驱动类型
+            'type' => 'Chuanglan',
+            // 应用ID
+            'app_id' => '',
+            // 应用密钥
+            'app_secret' => '',
+            // 产品类型notify-通知短信；market-营销短信；verify-验证码短信
+            'product_type' => 'notify',
+            // 模板ID
+            'template_id' => '',
+        ],
     ],
 ];
