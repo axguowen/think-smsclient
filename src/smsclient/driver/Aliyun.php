@@ -69,6 +69,10 @@ class Aliyun extends Platform
      */
     public function send($mobiles, array $data = [], array $options = [])
 	{
+        // 如果指定的手机号是字符串则转换为数组
+        if(!is_array($mobiles)){
+            $mobiles = explode(',', $mobiles);
+        }
         // 实例化请求类
         $request = new SendSmsRequest([
             'phoneNumbers' => implode(',', $mobiles),
