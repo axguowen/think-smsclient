@@ -90,9 +90,9 @@ class Aliyun extends Platform
         }
 
         // 如果发送失败
-        if(is_null($response->body->Code != 'OK')){
+        if(is_null($response->body->code != 'OK')){
             // 返回错误
-            return [null, new \Exception($response->body->Message)];
+            return [null, new \Exception($response->body->message)];
         }
 
         // 要返回的数据
@@ -105,7 +105,7 @@ class Aliyun extends Platform
                 // 手机号
                 'tel' => $item,
                 // 流水号
-                'serial_id' => $response->body->BizId,
+                'serial_id' => $response->body->bizId,
                 // 发送状态
                 'send_status' => 1,
             ];
